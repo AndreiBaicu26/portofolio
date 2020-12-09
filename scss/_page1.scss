@@ -1,0 +1,77 @@
+#page1 {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+h1 {
+  font-weight: bold;
+  letter-spacing: 0.7px;
+}
+p {
+  letter-spacing: 0.3px;
+  color: #172b4d;
+  font-size: 2rem;
+}
+
+button {
+  width: 9rem;
+  width: 15rem;
+  height: 5rem;
+  text-align: center;
+  background: $secondary-color;
+  letter-spacing: 0.3px;
+  color: #f4f5f7;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 20px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 18px -1px rgba(194, 173, 194, 0.9);
+}
+
+button:active {
+  border: none;
+  transform: scale(0.9);
+  box-shadow: 0px 0px 18px -1px rgba(194, 173, 194, 0.2);
+}
+
+.centered {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#logo {
+  display: block;
+  width: 16rem;
+  height: 10rem;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+#blob {
+  position: fixed;
+  z-index: 1;
+  bottom: 15rem;
+  left: -43rem;
+  animation: fadeIn ease-in 2s;
+  transition: all 1.5s;
+  transform: matrix(-0.09, 1, -1, -0.09, 0, 0);
+}

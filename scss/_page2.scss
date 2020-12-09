@@ -1,0 +1,246 @@
+.navbar {
+  height: 7rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  align-items: center;
+  .navbar-brand {
+  }
+  .navbar-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    a {
+      transition: all 0.3s;
+    }
+    cursor: pointer;
+    li:not(:last-child) {
+      a:after {
+        content: "";
+        border: 0.5px solid $secondary-color;
+        margin-left: 2rem;
+      }
+    }
+  }
+}
+
+#logo2 {
+  display: block;
+  width: 16rem;
+  height: 2rem;
+}
+
+.navbar-nav .nav-link {
+  font-size: 2rem;
+  margin-right: 2rem;
+  font-weight: 600;
+  color: $primary-color !important;
+}
+
+.nav-link:hover {
+  display: block;
+  transform: scale(0.9);
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 6rem 10rem;
+  margin: 0rem 2rem 0rem 2rem;
+  h1 {
+    max-width: 70%;
+    line-height: 75px;
+    font-weight: 600;
+    span {
+      color: $secondary-color;
+    }
+  }
+
+  #hello {
+    display: block;
+    width: 40rem;
+    height: 30rem;
+  }
+  p {
+    font-weight: 500;
+  }
+  height: 40rem;
+  background-color: $grey;
+}
+
+.about {
+  &_title {
+    @include title-container;
+  }
+
+  &_card {
+    @include card;
+    max-width: 60%;
+    height: 50rem;
+    display: flex;
+
+    margin: auto;
+    overflow: hidden;
+  }
+}
+
+.card-details {
+  background-color: $primary-color;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3rem;
+  border-right: 3rem solid $secondary-color;
+  &_about {
+    text-align: center;
+    p {
+      color: white;
+      font-weight: 500;
+    }
+    p:nth-child(2) {
+      color: $subtitle-grey;
+    }
+  }
+
+  &_elem {
+    color: white;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  &_social {
+    padding: 0 2rem;
+    &_contact {
+      margin-top: 0.5rem;
+      font-weight: 500;
+    }
+    &_links {
+      margin-top: 0.2rem;
+      display: flex;
+      justify-content: space-around;
+
+      a {
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+      }
+      a:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  &_subtitle {
+    color: $subtitle-grey;
+    margin: 0;
+  }
+
+  &_photo {
+    width: 9rem;
+    height: 9rem;
+    border: 5px solid $secondary-color;
+    border-radius: 50%;
+  }
+}
+
+.card-description {
+  padding: 2rem;
+  p {
+    padding: 3rem;
+    font-size: 2rem;
+    color: $primary-color;
+  }
+
+  &_hobbies {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+    .hobby {
+      transition: all 0.2s ease-in-out;
+      width: 15rem;
+      p {
+        padding: 1rem;
+        font-size: 1.6rem;
+        text-align: center;
+        font-weight: 600;
+      }
+
+      background-color: white;
+      box-shadow: 0px 0px 18px -1px rgba(194, 173, 194, 0.3);
+      border-radius: 2rem;
+
+      img {
+        height: 4rem;
+        width: 10rem;
+        margin-bottom: 1.6rem;
+      }
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    .hobby:hover {
+      transform: scale(1.1);
+      box-shadow: 0px 0px 18px -1px rgba(194, 173, 194, 0.7);
+    }
+  }
+}
+
+.projects_container {
+  @include title-container;
+}
+
+.projects_main {
+  width: 100rem;
+  height: 40rem;
+  margin: auto;
+  display: flex;
+
+  @include card;
+  &_image {
+    width: 70%;
+    padding: 2rem;
+  }
+  .image {
+    height: 100%;
+    background: transparent linear-gradient(180deg, #13a779 0%, #14d9b8 100%) 0%
+      0% no-repeat padding-box;
+  }
+  &_description {
+    padding: 3rem;
+    h3 {
+      text-align: start;
+      span {
+        color: $orange;
+      }
+    }
+    p {
+      margin-top: 3rem;
+    }
+  }
+
+  .logos {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-left: -20px;
+    img {
+      object-fit: cover;
+    }
+  }
+}
+
+.projects {
+  margin-top: 10rem;
+  padding: 0rem 40rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 4rem;
+
+  &_example {
+    @include card;
+  }
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrei Baicu</title>
+    <script src="script.js"></script>
+
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+    <!-- Icons -->
+
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+
+    <div class="page" id="page1">
+        <div id="page1Content" class="centered">
+            <h1 class="animate__animated animate__fadeInDown">Hi there! I'm Andrei</h1>
+            <p class="animate__animated animate__fadeIn animate__delay-1s">Welcome to my portofolio!</p>
+            <button class="animate__animated animate__fadeIn animate__delay-1s btn btn-success btn-lg"
+                onclick="show('page2','page1');">Let's go &rarr;</button>
+            <img class="animate__animated animate__fadeIn animate__delay-1s" id="logo" src="./assets/logo-andrei.svg"
+                alt="Andrei logo">
+        </div>
+
+    </div>
+
+    <img id="blob" src="./assets/blob.svg" alt="blob">
+    <div style="display: none;" id="page2">
+        <nav class="navbar">
+            <a class="navbar-brand">
+                <img id="logo2" src="./assets/logo-andrei.svg" alt="Andrei logo">
+            </a>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link">About me</a></li>
+                <li class="nav-item"><a class="nav-link">Cool projects</a></li>
+                <li class="nav-item"><a class="nav-link">Let's socialize</a></li>
+
+            </ul>
+        </nav>
+        <div class="header">
+            <div>
+                <h1>My name is Andrei and I am a Front<span>End</span> developer. </h1>
+                <p>Work in progress: Full Stack developer</p>
+            </div>
+            <img id="hello" src="./assets/Hello.svg">
+        </div>
+
+
+
+        <section class="about">
+            <div class="about_title">
+                <h1>Few things about <span> myself </span></h1>
+
+            </div>
+            <div class="about_card">
+                <div class="card-details">
+                    <img src="./assets/Andrei.jpg" class="card-details_photo">
+                    <div class="card-details_about">
+                        <p class="card-details_elem">Andrei Baicu</p>
+                        <p class="card-details_elem">22 years</p>
+                        <p class="card-details_elem">Developer</p>
+                    </div>
+
+                    <div class="card-details_social">
+                        <p class="card-details_subtitle">Social</p>
+                        <div class="card-details_social_links">
+                            <a href="https://github.com/AndreiBaicu26"> <img src="./assets/Icon -github.svg"
+                                    alt="git-hub"></a>
+                            <a><img src="./assets/Icon -linkedin.svg" alt="linkedinin"></a>
+                            <a><img src="./assets/Iconr-instagram.svg" alt="instagram"></a>
+                            <a><img src="./assets/icon-facebook.svg" alt="facebook"></a>
+                        </div>
+                        <div class="card-details_social_contact">
+                            <p class="card-details_subtitle">Contact</p>
+                            <p class="card-details_elem">baicuandrei62@gmail.com</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card-description">
+                    <p>I got deep into web development during my university where I was fascinated by the possibilities
+                        of programming. I got the chance to develop small apps and evolve in my career. I got to love
+                        working in a team while managing and coordinating projects in my student's association. </p>
+                    <h3>Main passions and hobbies</h3>
+                    <div class="card-description_hobbies">
+                        <div class="hobby">
+                            <p>Programming</p>
+                            <img class="center" src="assets/icon-js.svg">
+                        </div>
+                        <div class="hobby">
+                            <p>Finance</p>
+                            <img class="center" src="assets/icon-chart.svg">
+                        </div>
+                        <div class="hobby">
+                            <p>Board games</p>
+                            <img class="center" src="assets/icon-trophy.svg">
+                        </div>
+                        <div class="hobby">
+                            <p>Aviation</p>
+                            <img class="center" src="assets/icon-plane.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projectsSection">
+            <div class="projects_container">
+                <h1>My cool <span>projects</span></h1>
+                <p>at least for me</p>
+            </div>
+
+            <div class="projects_main">
+                <div class="projects_main_image">
+                    <div class="image">dsds</div>
+                </div>
+                <div class="projects_main_description">
+                    <div>
+                        <h3><span>Air</span> deposit</h3>
+                        <p>Final project for university. Manage products and employees in a store/deposit. The project
+                            had an Android app used by employees in the deposit while the web app was used for managing
+                            and visualize statistics related to the store</p>
+                    </div>
+                    <div class="logos">
+                        <img src="./assets/1280px-React-icon.svg.png" alt="">
+                        <img src="./assets/Android-Logo.png" alt="">
+                        <img src="./assets/firebase.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="projects">
+                <div class="projects_example">
+                    <img src="" alt="" class="projects_examples_details">
+                    <div class="projects_example_details">
+                        <h3>Take a <span>pic</span></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="projects_example logos">
+                        <img>
+                        <img>
+                    </div>
+                </div>
+
+                <div class="projects_example">
+                    <img src="" alt="" class="projects_examples_details">
+                    <div class="projects_example_details">
+                        <h3>Take a <span>pic</span></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="projects_example_logos">
+                        <img>
+                        <img>
+                    </div>
+                </div>
+
+                <div class="projects_example">
+                    <img src="" alt="" class="projects_examples_details">
+                    <div class="projects_example_details">
+                        <h3>Take a <span>pic</span></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="projects_example_logos">
+                        <img>
+                        <img>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+
+
+    <!-- Core -->
+    <script src="/argon-design-system-master/assets/js/core/jquery.min.js"></script>
+    <script src="/argon-design-system-master/assets/js/core/popper.min.js"></script>
+    <script src="/argon-design-system-master/assets/js/core/bootstrap.min.js"></script>
+
+    <!-- Theme JS -->
+    <script src="/argon-design-system-master/assets/js/argon-design-system.min.js"></script>
+</body>
+
+</html>
