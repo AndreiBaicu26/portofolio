@@ -1,4 +1,9 @@
 .navbar {
+  position: sticky;
+  top: 0; /* required */
+  background-color: white;
+  transition: all 0.5s;
+  z-index: 5;
   height: 7rem;
   display: flex;
   justify-content: space-between;
@@ -24,6 +29,9 @@
   }
 }
 
+.shadow {
+  box-shadow: 0px 15px 35px 2px rgba(0, 0, 0, 0.45);
+}
 #logo2 {
   display: block;
   width: 16rem;
@@ -194,6 +202,7 @@
 }
 
 .projects_main {
+  transition: all 0.2s;
   width: 100rem;
   height: 40rem;
   margin: auto;
@@ -222,25 +231,72 @@
     }
   }
 
-  .logos {
-    display: flex;
-    align-items: center;
-    margin-top: 2rem;
-    margin-left: -20px;
-    img {
-      object-fit: cover;
-    }
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 18px -1px rgba(194, 173, 194, 1);
   }
 }
 
+.logos {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  margin-left: -20px;
+  img {
+    object-fit: cover;
+    height: 4rem;
+  }
+}
 .projects {
   margin-top: 10rem;
-  padding: 0rem 40rem;
+  padding: 0rem 9rem;
   display: grid;
   grid-template-columns: 50% 50%;
-  gap: 4rem;
+  gap: 7rem 0rem;
 
   &_example {
     @include card;
+    transition: all 0.2s;
+    width: 43rem;
+    height: 45rem;
+    justify-self: center;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    .logos {
+      margin-left: 1rem;
+
+      img:not(:last-child) {
+        margin-right: 4rem;
+      }
+    }
+    &_image {
+      height: 40%;
+      padding: 1rem;
+      .image {
+        height: 100%;
+        background: linear-gradient(180deg, #13a779 0%, #14d9b8 100%);
+      }
+    }
+
+    &_details {
+      padding: 0rem 1rem;
+      h3 {
+        text-align: start;
+      }
+
+      p {
+        margin-top: 0.6rem;
+      }
+
+      span {
+        color: $orange;
+      }
+    }
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 0px 18px -1px rgba(194, 173, 194, 1);
+    }
   }
 }

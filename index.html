@@ -31,14 +31,14 @@
 
     <img id="blob" src="./assets/blob.svg" alt="blob">
     <div style="display: none;" id="page2">
-        <nav class="navbar">
-            <a class="navbar-brand">
+        <nav id="nav" class="navbar">
+            <a class="navbar-brand smooth" href="#">
                 <img id="logo2" src="./assets/logo-andrei.svg" alt="Andrei logo">
             </a>
             <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link">About me</a></li>
-                <li class="nav-item"><a class="nav-link">Cool projects</a></li>
-                <li class="nav-item"><a class="nav-link">Let's socialize</a></li>
+                <li class="nav-item"><a class="nav-link" href="#About">About me</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Projects">Cool projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Contact">Let's socialize</a></li>
 
             </ul>
         </nav>
@@ -52,7 +52,7 @@
 
 
 
-        <section class="about">
+        <section class="about" id="About">
             <div class="about_title">
                 <h1>Few things about <span> myself </span></h1>
 
@@ -109,13 +109,14 @@
             </div>
         </section>
 
-        <section class="projectsSection">
+        <section class="projectsSection" id="Projects">
             <div class="projects_container">
                 <h1>My cool <span>projects</span></h1>
                 <p>at least for me</p>
             </div>
 
-            <div class="projects_main">
+            <div class="projects_main" onclick="window.open('https://github.com/AndreiBaicu26/Licenta_Web','mywindow');"
+                style="cursor: pointer;">
                 <div class="projects_main_image">
                     <div class="image">dsds</div>
                 </div>
@@ -127,46 +128,63 @@
                             and visualize statistics related to the store</p>
                     </div>
                     <div class="logos">
-                        <img src="./assets/1280px-React-icon.svg.png" alt="">
+                        <img src="./assets/react.png" alt="">
                         <img src="./assets/Android-Logo.png" alt="">
                         <img src="./assets/firebase.png" alt="">
                     </div>
                 </div>
             </div>
             <div class="projects">
-                <div class="projects_example">
-                    <img src="" alt="" class="projects_examples_details">
+                <div class="projects_example"
+                    onclick="window.open('https://github.com/AndreiBaicu26/TakeAPicAngular','mywindow');"
+                    style="cursor: pointer;">
+                    <div class="projects_example_image">
+                        <div class="image">dsds</div>
+                    </div>
+
                     <div class="projects_example_details">
                         <h3>Take a <span>pic</span></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p>Learnt the Angular framework and used WebRTC adapter. Getting acces to the
+                            camera and displaying the input.</p>
                     </div>
-                    <div class="projects_example logos">
-                        <img>
-                        <img>
+                    <div class="logos">
+                        <img src="./assets/icon-angular.png" alt="">
+                        <img src="./assets/icon-webrtc.png" alt="">
                     </div>
                 </div>
 
-                <div class="projects_example">
-                    <img src="" alt="" class="projects_examples_details">
-                    <div class="projects_example_details">
-                        <h3>Take a <span>pic</span></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="projects_example"
+                    onclick="window.open('https://github.com/AndreiBaicu26/crwn-clothing','mywindow');"
+                    style="cursor: pointer;">
+                    <div class="projects_example_image">
+                        <div class="image">dsds</div>
                     </div>
-                    <div class="projects_example_logos">
-                        <img>
-                        <img>
+                    <div class="projects_example_details">
+                        <h3>CRWN - <span>Clothing</span></h3>
+                        <p>A simple clothing store. Studied Sass preprocessor and deep dived into Redux. Learnt from a
+                            udemy course.</p>
+                    </div>
+                    <div class="logos">
+                        <img src="./assets/react.png" alt="">
+                        <img src="./assets/icon-redux.png" alt="">
+                        <img src="./assets/icon-sass.png" alt="">
                     </div>
                 </div>
 
-                <div class="projects_example">
-                    <img src="" alt="" class="projects_examples_details">
-                    <div class="projects_example_details">
-                        <h3>Take a <span>pic</span></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="projects_example"
+                    onclick="window.open('https://github.com/AndreiBaicu26/Codella','mywindow');"
+                    style="cursor: pointer;">
+                    <div class="projects_example_image">
+                        <div class="image">dsds</div>
                     </div>
-                    <div class="projects_example_logos">
-                        <img>
-                        <img>
+                    <div class="projects_example_details">
+                        <h3>Codella</h3>
+                        <p>This project was developed in a team during university. It's a note sharing app between
+                            students.</p>
+                    </div>
+                    <div class="logos">
+                        <img src="./assets/icon-node.png" alt="">
+                        <img src="./assets/icon-Mysql.png" alt="">
                     </div>
                 </div>
             </div>
